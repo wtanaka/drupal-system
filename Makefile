@@ -7,7 +7,7 @@ system.tar: modules/system/system_user.inc.php modules/system/admin.inc.php modu
 	tar cvf "$@" $^
 
 system.patch:
-	git diff --no-prefix origin/vendor5 > "$@"
+	git diff --no-prefix origin/vendor5 modules/system > "$@"
 
 %.bz2: %
 	bzip2 -9 -c $^ > "$@"

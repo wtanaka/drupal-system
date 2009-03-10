@@ -125,7 +125,7 @@ function _real_system_theme_data() {
  * @return
  *   An associative array of themes information.
  */
-function _system_theme_data() {
+function _real__system_theme_data() {
   static $themes_info = array();
 
   if (empty($themes_info)) {

@@ -176,6 +176,11 @@ function system_theme_data() {
   return _real_system_theme_data();
 }
 
+function _system_theme_data() {
+  include_once dirname(__FILE__).'/admin.inc.php';
+  return _real__system_theme_data();
+}
+
 function system_find_base_theme($themes, $key, $used_keys = array()) {
   include_once dirname(__FILE__).'/admin.inc.php';
   return _real_system_find_base_theme($themes, $key, $used_keys);

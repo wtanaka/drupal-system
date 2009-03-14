@@ -7,7 +7,7 @@ clean:
 system.tar: modules/system/*.inc.php modules/system/system.module
 	tar cvf "$@" $^
 
-system.patch:
+system.patch: modules/system/*
 	git diff --no-prefix origin/vendor6 modules/system > "$@"
 
 %.bz2: %

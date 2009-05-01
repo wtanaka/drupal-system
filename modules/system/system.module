@@ -1,7 +1,19 @@
 <?php
 // $Id: system.module,v 1.585.2.32 2009/02/25 21:02:37 goba Exp $
 
+/**
+ * @file
+ * Configuration system that lets administrators modify the workings of the site.
+ */
+
+/**
+ * The current system version.
+ */
 define('VERSION', '6.10');
+
+/**
+ * Core API compatibility.
+ */
 define('DRUPAL_CORE_COMPATIBILITY', '6.x');
 define('DRUPAL_MINIMUM_PHP',    '4.3.5');
 define('DRUPAL_MINIMUM_PHP_MEMORY_LIMIT',    '16M');

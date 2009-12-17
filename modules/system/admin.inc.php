@@ -27,7 +27,7 @@ function _real_system_admin_menu_block($item) {
     }
     // Prepare for sorting as in function _menu_tree_check_access().
     // The weight is offset so it is always positive, with a uniform 5-digits.
-    $content[(50000 + $item['weight']) .' '. $item['title'] .' '. $item['mlid']] = $item;
+    $content[(50000 + $item['weight']) .' '. drupal_strtolower($item['title']) .' '. $item['mlid']] = $item;
   }
   ksort($content);
   return $content;

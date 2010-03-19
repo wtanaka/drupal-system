@@ -1,12 +1,12 @@
 <?php
-// $Id: system.module,v 1.440.2.59 2009/12/16 20:46:31 drumm Exp $
+// $Id: system.module,v 1.440.2.61 2010/03/04 00:16:02 drumm Exp $
 
 /**
  * @file
  * Configuration system that lets administrators modify the workings of the site.
  */
 
-define('VERSION', '5.21');
+define('VERSION', '5.22');
 
 function system_help($section) {
   if (strpos($section, 'admin') === 0) {

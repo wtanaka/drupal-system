@@ -1,5 +1,5 @@
 <?php
-// $Id: system.module,v 1.585.2.52 2010/06/02 18:52:32 goba Exp $
+// $Id: system.module,v 1.585.2.52.2.1 2010/08/11 20:22:27 goba Exp $
 
 /**
  * @file
@@ -9,7 +9,7 @@
 /**
  * The current system version.
  */
-define('VERSION', '6.17');
+define('VERSION', '6.18');
 
 /**
  * Core API compatibility.
@@ -328,7 +328,7 @@ function system_actions_delete_form($form_state, $action) {
   return _real_system_actions_delete_form($form_state, $action);
 }
 
-function system_actions_delete_form_submit($form, &$form_state) { 
+function system_actions_delete_form_submit($form, &$form_state) {
   include_once dirname(__FILE__).'/actions.inc.php';
   return _real_system_actions_delete_form_submit($form, $form_state);
 }

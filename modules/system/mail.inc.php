@@ -36,7 +36,7 @@ function _real_system_mail($key, &$message, $params) {
     );
   }
   $subject = strtr($context['subject'], $variables);
-  $body = strtr($context['message'], $variables);
+  $body = strtr(filter_xss_admin($context['message']), $variables);
   $message['subject'] .= str_replace(array("\r", "\n"), '', $subject);
   $message['body'][] = drupal_html_to_text($body);
 }

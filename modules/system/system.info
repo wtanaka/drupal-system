@@ -4,8 +4,8 @@ description = Handles general site configuration for administrators.
 package = Core - required
 version = VERSION
 
-; Information added by drupal.org packaging script on 2010-03-04
-version = "5.22"
+; Information added by drupal.org packaging script on 2010-08-11
+version = "5.23"
 project = "drupal"
-datestamp = "1267662005"
+datestamp = "1281559590"
 
